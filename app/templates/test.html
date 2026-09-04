@@ -1,0 +1,316 @@
+<!doctype html>
+<html lang="uk">
+<head>
+<meta charset="utf-8">
+<title>PhotoCompressorService</title>
+<link rel="icon" type="image/png" href="data:image/png;base64,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">
+<style>
+  body { font-family: Segoe UI, Arial, sans-serif; margin: 24px; background: #f4f5f7; color: #222; }
+  h1 { font-size: 20px; }
+  .layout { display: flex; gap: 24px; flex-wrap: wrap; }
+  .panel { background: #fff; border-radius: 8px; padding: 16px 20px; box-shadow: 0 1px 3px rgba(0,0,0,.1); }
+  .params { width: 280px; }
+  .params label { display: block; margin-top: 10px; font-size: 13px; color: #555; }
+  .params input { width: 100%; box-sizing: border-box; padding: 5px 7px; margin-top: 2px; }
+  button { margin-top: 16px; padding: 8px 16px; border: none; border-radius: 5px; background: #2563eb; color: #fff; cursor: pointer; font-size: 14px; }
+  button:disabled { background: #93a3b8; cursor: default; }
+  .results { flex: 1; min-width: 400px; }
+  .compare { display: flex; gap: 20px; margin-top: 12px; flex-wrap: wrap; }
+  .compare figure { margin: 0; text-align: center; }
+  .compare img { max-width: 320px; max-height: 320px; border: 1px solid #ddd; background: #fafafa; }
+  .stats { font-size: 13px; line-height: 1.6; margin-top: 6px; }
+  .error { color: #b91c1c; margin-top: 12px; }
+  .badge { display: inline-block; padding: 1px 8px; border-radius: 10px; font-size: 12px; }
+  .badge.changed { background: #dcfce7; color: #166534; }
+  .badge.unchanged { background: #e5e7eb; color: #374151; }
+  .btn-secondary { background: #475569; }
+  .code-panel { margin-top: 24px; }
+  .code-panel .head { display: flex; justify-content: space-between; align-items: center; }
+  .code-panel pre { background: #0f172a; color: #e2e8f0; padding: 14px; border-radius: 6px; overflow-x: auto; font-size: 12.5px; line-height: 1.5; }
+  .copy-btn { margin-top: 0; padding: 5px 12px; font-size: 12px; }
+  .update-banner { display: none; align-items: center; justify-content: space-between; gap: 16px; background: #fef9c3; border: 1px solid #eab308; color: #713f12; padding: 10px 16px; border-radius: 8px; margin-bottom: 16px; font-size: 13.5px; }
+  .update-banner.show { display: flex; }
+  .update-banner button { margin-top: 0; background: #b45309; padding: 6px 14px; font-size: 13px; white-space: nowrap; }
+  .header { display: flex; justify-content: space-between; align-items: baseline; flex-wrap: wrap; gap: 8px; }
+  .header h1 { margin: 0; font-size: 24px; }
+  .header .version { font-size: 12px; color: #888; font-weight: normal; margin-left: 8px; }
+  .gh-link { font-size: 13px; color: #2563eb; text-decoration: none; }
+  .gh-link:hover { text-decoration: underline; }
+  .tagline { color: #555; margin-top: 2px; margin-bottom: 18px; }
+  .badge.example { background: #e0e7ff; color: #3730a3; }
+</style>
+</head>
+<body>
+<div class="header">
+  <h1>PhotoCompressorService<span class="version">v{{ version }}</span></h1>
+  <a class="gh-link" href="{{ github_url }}" target="_blank" rel="noopener">Проєкт на GitHub — вихідний код, документація, релізи ↗</a>
+</div>
+<p class="tagline">Стиснення та конвертація фото для 1С. Нижче — живий приклад роботи й інструмент для перевірки.</p>
+
+<div class="update-banner" id="update-banner">
+  <span id="update-text"></span>
+  <button id="update-btn">Завантажити оновлення</button>
+</div>
+
+<p>Перевірка на власному фото — ті самі параметри, що приймає <code>POST /compress</code>:</p>
+
+<div class="layout">
+  <div class="panel params">
+    <label>Файл зображення
+      <input type="file" id="file" accept="image/*">
+    </label>
+    <label>Макс. ширина (px)
+      <input type="number" id="max_width" value="{{ defaults.max_width }}">
+    </label>
+    <label>Макс. висота (px)
+      <input type="number" id="max_height" value="{{ defaults.max_height }}">
+    </label>
+    <label>Макс. розмір (КБ)
+      <input type="number" id="max_size_kb" value="{{ defaults.max_size_kb }}">
+    </label>
+    <label>Початкова якість JPEG
+      <input type="number" id="quality_start" value="{{ defaults.quality_start }}">
+    </label>
+    <label>Мінімальна якість JPEG
+      <input type="number" id="quality_min" value="{{ defaults.quality_min }}">
+    </label>
+    <label>Крок зниження якості
+      <input type="number" id="quality_step" value="{{ defaults.quality_step }}">
+    </label>
+    <button id="run" disabled>Стиснути</button>
+    <button id="gen-code" class="btn-secondary">Згенерувати код 1С</button>
+    <div class="error" id="error"></div>
+  </div>
+
+  <div class="panel results">
+    <div class="compare">
+      <figure>
+        <img id="preview-before" alt="до" src="data:image/jpeg;base64,{{ demo.before_b64 }}">
+        <figcaption>До</figcaption>
+        <div class="stats" id="stats-before">{{ demo.before_dims }} · {{ demo.before_kb }} КБ</div>
+      </figure>
+      <figure>
+        <img id="preview-after" alt="після" src="data:image/jpeg;base64,{{ demo.after_b64 }}">
+        <figcaption>Після <span class="badge example" id="badge">приклад</span></figcaption>
+        <div class="stats" id="stats-after">{{ demo.after_dims }} · {{ demo.after_kb }} КБ{% if demo.quality_used %} · якість {{ demo.quality_used }}{% endif %}</div>
+      </figure>
+    </div>
+  </div>
+</div>
+
+<div class="panel code-panel" id="code-panel" hidden>
+  <div class="head">
+    <strong>Готовий код BSL для 1С</strong>
+    <button class="copy-btn" id="copy-code">Скопіювати</button>
+  </div>
+  <pre id="code-output"></pre>
+</div>
+
+<script>
+const fileInput = document.getElementById('file');
+const runBtn = document.getElementById('run');
+const errorBox = document.getElementById('error');
+
+function fileToBase64(file) {
+  return new Promise((resolve, reject) => {
+    const reader = new FileReader();
+    reader.onload = () => resolve(reader.result.split(',')[1]);
+    reader.onerror = reject;
+    reader.readAsDataURL(file);
+  });
+}
+
+fileInput.addEventListener('change', () => {
+  runBtn.disabled = !fileInput.files.length;
+  errorBox.textContent = '';
+  if (fileInput.files.length) {
+    const file = fileInput.files[0];
+    document.getElementById('preview-before').src = URL.createObjectURL(file);
+    document.getElementById('stats-before').textContent =
+      `${file.name} · ${(file.size / 1024).toFixed(1)} КБ`;
+  }
+});
+
+runBtn.addEventListener('click', async () => {
+  errorBox.textContent = '';
+  runBtn.disabled = true;
+  runBtn.textContent = 'Обробка...';
+  try {
+    const file = fileInput.files[0];
+    const base64 = await fileToBase64(file);
+    const payload = {
+      image_base64: base64,
+      max_width: Number(document.getElementById('max_width').value),
+      max_height: Number(document.getElementById('max_height').value),
+      max_size_kb: Number(document.getElementById('max_size_kb').value),
+      quality_start: Number(document.getElementById('quality_start').value),
+      quality_min: Number(document.getElementById('quality_min').value),
+      quality_step: Number(document.getElementById('quality_step').value),
+    };
+    const resp = await fetch('/compress', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify(payload),
+    });
+    const data = await resp.json();
+    if (!resp.ok || !data.success) {
+      throw new Error(data.error || `HTTP ${resp.status}`);
+    }
+    document.getElementById('preview-after').src = 'data:image/jpeg;base64,' + data.image_base64;
+    document.getElementById('stats-after').textContent =
+      `${data.format} ${data.width}x${data.height} · ${data.size_kb} КБ` +
+      (data.quality_used ? ` · якість ${data.quality_used}` : '');
+    const badge = document.getElementById('badge');
+    badge.textContent = data.changed ? 'змінено' : 'без змін';
+    badge.className = 'badge ' + (data.changed ? 'changed' : 'unchanged');
+  } catch (err) {
+    errorBox.textContent = 'Помилка: ' + err.message;
+  } finally {
+    runBtn.disabled = false;
+    runBtn.textContent = 'Стиснути';
+  }
+});
+
+function buildBslCode() {
+  const host = window.location.hostname;
+  const port = window.location.port || '80';
+  const p = {
+    maxWidth: document.getElementById('max_width').value,
+    maxHeight: document.getElementById('max_height').value,
+    maxSizeKb: document.getElementById('max_size_kb').value,
+    qualityStart: document.getElementById('quality_start').value,
+    qualityMin: document.getElementById('quality_min').value,
+    qualityStep: document.getElementById('quality_step').value,
+  };
+  return `// Отправляет изображение на локальный Python-сервис (${host}:${port}) для сжатия
+// и конвертации в JPEG (сервис всегда возвращает JPEG, независимо от исходного формата).
+// Если сервис недоступен или вернул ошибку - возвращает исходные данные БЕЗ ИЗМЕНЕНИЙ
+// (Успех = Ложь) - в этом случае расширение файла менять не нужно, формат остался прежним.
+//
+// Параметры:
+//  ДвоичныеДанные - ДвоичныеДанные - исходное изображение
+//  МаксШирина     - Число - максимальная ширина в пикселях (по умолчанию ${p.maxWidth})
+//  МаксВысота     - Число - максимальная высота в пикселях (по умолчанию ${p.maxHeight})
+//  МаксРазмерКБ   - Число - целевой максимальный размер файла в килобайтах (по умолчанию ${p.maxSizeKb})
+//
+// Возвращаемое значение:
+//  Структура:
+//   * ДвоичныеДанные - ДвоичныеДанные - результат сжатия (JPEG) при Успех = Истина,
+//                       либо исходные данные без изменений (в исходном формате) при Успех = Ложь
+//   * Успех           - Булево - Истина, если сервис успешно обработал изображение и
+//                       вернул его в JPEG - в этом случае нужно поменять расширение файла;
+//                       Ложь - формат не менялся, расширение трогать не нужно
+//
+// ВАЖНО при интеграции со стандартной подсистемой "Файлы" (бд_ДобавитьФайл и т.п.):
+// одной подмены переменной ДвоичныеДанные НЕДОСТАТОЧНО, если дальше по коду менеджер
+// файлов берёт содержимое из АдресФайлаВоВременномХранилище, а не из этой переменной.
+// Обязательно обновите и адрес во временном хранилище тем же вызовом:
+//   АдресФайлаВоВременномХранилище = ПоместитьВоВременноеХранилище(ДвоичныеДанные, АдресФайлаВоВременномХранилище);
+// Иначе физически будет сохранён исходный файл, несмотря на "успешное" сжатие.
+//
+// Пример использования:
+//  СтруктураОтвета = СжатьФото(ДвоичныеДанные);
+//  Если СтруктураОтвета.Успех Тогда
+//  	ДвоичныеДанные = СтруктураОтвета.ДвоичныеДанные;
+//  	АдресФайлаВоВременномХранилище = ПоместитьВоВременноеХранилище(ДвоичныеДанные, АдресФайлаВоВременномХранилище);
+//  	Если РасширениеБезТочки = "webp" Тогда
+//  		РасширениеБезТочки = "jpg";
+//  	КонецЕсли;
+//  КонецЕсли;
+//
+Функция СжатьФото(ДвоичныеДанные, МаксШирина = ${p.maxWidth}, МаксВысота = ${p.maxHeight}, МаксРазмерКБ = ${p.maxSizeKb}) Экспорт
+
+	СтруктураОтвета = Новый Структура;
+	СтруктураОтвета.Вставить("ДвоичныеДанные", ДвоичныеДанные);
+	СтруктураОтвета.Вставить("Успех", Ложь);
+
+	Попытка
+		Соединение = Новый HTTPСоединение("${host}", ${port}, , , , 10);
+
+		Тело = Новый Структура;
+		Тело.Вставить("image_base64", Base64Строка(ДвоичныеДанные));
+		Тело.Вставить("max_width", МаксШирина);
+		Тело.Вставить("max_height", МаксВысота);
+		Тело.Вставить("max_size_kb", МаксРазмерКБ);
+		Тело.Вставить("quality_start", ${p.qualityStart});
+		Тело.Вставить("quality_min", ${p.qualityMin});
+		Тело.Вставить("quality_step", ${p.qualityStep});
+
+		ЗаписьJSON = Новый ЗаписьJSON;
+		ЗаписьJSON.УстановитьСтроку();
+		ЗаписатьJSON(ЗаписьJSON, Тело);
+		СтрокаТела = ЗаписьJSON.Закрыть();
+
+		Заголовки = Новый Соответствие;
+		Заголовки.Вставить("Content-Type", "application/json");
+
+		Запрос = Новый HTTPЗапрос("/compress", Заголовки);
+		Запрос.УстановитьТелоИзСтроки(СтрокаТела);
+
+		Ответ = Соединение.ОтправитьДляОбработки(Запрос);
+
+		Если Ответ.КодСостояния <> 200 Тогда
+			Возврат СтруктураОтвета; // сервис вернул ошибку — оставляем оригинал
+		КонецЕсли;
+
+		ЧтениеJSON = Новый ЧтениеJSON;
+		ЧтениеJSON.УстановитьСтроку(Ответ.ПолучитьТелоКакСтроку());
+		Результат = ПрочитатьJSON(ЧтениеJSON, Ложь);
+		ЧтениеJSON.Закрыть();
+
+		Если Результат.Свойство("success") И Результат.success Тогда
+			СтруктураОтвета.Вставить("ДвоичныеДанные", Base64Значение(Результат.image_base64));
+			СтруктураОтвета.Вставить("Успех", Истина);
+		КонецЕсли;
+
+		Возврат СтруктураОтвета;
+
+	Исключение
+		// служба недоступна — не блокируем работу пользователя
+		Возврат СтруктураОтвета;
+	КонецПопытки;
+
+КонецФункции`;
+}
+
+const codePanel = document.getElementById('code-panel');
+const codeOutput = document.getElementById('code-output');
+const copyBtn = document.getElementById('copy-code');
+
+document.getElementById('gen-code').addEventListener('click', () => {
+  codeOutput.textContent = buildBslCode();
+  codePanel.hidden = false;
+  codePanel.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+});
+
+copyBtn.addEventListener('click', async () => {
+  try {
+    await navigator.clipboard.writeText(codeOutput.textContent);
+    const original = copyBtn.textContent;
+    copyBtn.textContent = 'Скопійовано!';
+    setTimeout(() => { copyBtn.textContent = original; }, 1500);
+  } catch (err) {
+    errorBox.textContent = 'Не вдалося скопіювати: ' + err.message;
+  }
+});
+
+(async function checkForUpdates() {
+  try {
+    const resp = await fetch('/update-check');
+    const data = await resp.json();
+    if (!data.enabled || !data.update_available) return;
+
+    document.getElementById('update-text').textContent =
+      `Доступне оновлення ${data.latest_version} (поточна ${data.current_version}) · ${data.asset_name} · ${data.asset_size_mb} МБ`;
+    document.getElementById('update-banner').classList.add('show');
+  } catch (err) {
+    // тихо ігноруємо — перевірка оновлень не критична для роботи сторінки
+  }
+})();
+
+document.getElementById('update-btn').addEventListener('click', () => {
+  window.location.href = '/update-download';
+});
+</script>
+</body>
+</html>
