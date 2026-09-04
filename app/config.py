@@ -4,7 +4,7 @@ import sys
 from pathlib import Path
 
 APP_NAME = "PhotoCompressorService"
-VERSION = "1.0.1"
+VERSION = "1.0.2"
 GITHUB_URL = "https://github.com/Pro100NeFarT/PhotoCompressorService"
 
 DEFAULT_CONFIG = {

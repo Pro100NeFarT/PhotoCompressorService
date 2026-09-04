@@ -1,5 +1,5 @@
 #define AppName "PhotoCompressorService"
-#define AppVersion "1.0.1"
+#define AppVersion "1.0.2"
 #define ServiceName "PhotoCompressorService"
 #define ServiceDisplayName "Photo Compressor Service"
 #define Publisher "Internal Tools"
